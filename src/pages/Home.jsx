@@ -19,9 +19,19 @@ const Home = () => {
         />
         <ProjectCard
           title="Todo List"
-          topics={["useState", "events"]}
-          complete={false}
+          topics={[
+            "useState",
+            "conditional rendering",
+            "Functional state updates",
+          ]}
+          complete={true}
           to="/practice/todo-list"
+        />
+        <ProjectCard
+          title="Weather App"
+          topics={["useState", "events"]}
+          complete={true}
+          to="/practice/weather-app"
         />
       </div>
 
