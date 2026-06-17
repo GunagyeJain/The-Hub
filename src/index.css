@@ -1,1 +1,85 @@
 @import "tailwindcss";
+
+@theme {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface); /* cards */
+  --color-surface-hover: var(--surface-hover); /* cards hover    */
+
+  --color-text: var(--text); /* text */
+  --color-muted: var(--muted-text); /* secondary text   */
+
+  --color-border: var(--border);
+
+  --color-accent: var(--accent); /* accent */
+  --color-accent-hover: var(--accent-hover); /* accent hover */
+
+  --color-button: var(--button); /* button */
+  --color-button-hover: var(--button-hover); /* button hover */
+  --color-button-text: var(--button-text); /* text on a button */
+}
+
+/* LIGHT — cream background, brown accent */
+:root {
+  --bg: #f4efe6;
+  --surface: #fffdf8;
+  --surface-hover: #ece4d6;
+
+  --text: #2e2a24;
+  --muted-text: #6b6357;
+
+  --border: #ddd3c4;
+
+  --accent: #8b5e3c;
+  --accent-hover: #6f4a2e;
+
+  --button: #8b5e3c;
+  --button-hover: #6f4a2e;
+  --button-text: #fffdf8;
+}
+
+/* DARK — warm dark, orange accent */
+[data-theme="dark"] {
+  --bg: #262624;
+  --surface: #30302e;
+  --surface-hover: #3a3a37;
+
+  --text: #ececec;
+  --muted-text: #a3a097;
+
+  --border: #3f3f3c;
+
+  --accent: #e08c4a;
+  --accent-hover: #c9763a;
+
+  --button: #e08c4a;
+  --button-hover: #c9763a;
+  --button-text: #1f1e1d;
+}
+
+/* OCEAN — deep blue background, lighter blue accent */
+[data-theme="ocean"] {
+  --bg: #0a2942;
+  --surface: #103553;
+  --surface-hover: #16415f;
+
+  --text: #e0f2fe;
+  --muted-text: #8bb4d4;
+
+  --border: #1e4a6b;
+
+  --accent: #38bdf8;
+  --accent-hover: #0ea5e9;
+
+  --button: #38bdf8;
+  --button-hover: #0ea5e9;
+  --button-text: #052033;
+}
+
+/* Optional: smooth the transition when themes swap */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
