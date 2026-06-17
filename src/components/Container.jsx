@@ -3,9 +3,9 @@ import ThemeSwitcher from "./ThemeSwitcher";
 
 const Container = ({ children }) => {
   return (
-    <div class="flex h-screen items-center justify-center">
-      <div class="container h-[90vh] w-[90vw] rounded-2xl border-border bg-surface text-text shadow-xl">
-        <div class="py-3 text-center text-4xl font-[900]">{children}</div>
+    <div className="flex h-screen items-center justify-center">
+      <div className="container h-[90vh] w-[90vw] rounded-2xl border-border bg-surface text-text shadow-xl">
+        <div className="h-full py-3 text-center">{children}</div>
       </div>
       <div className="fixed top-4 left-4 fill-text">
         <Link to="/">

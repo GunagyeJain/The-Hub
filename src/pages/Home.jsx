@@ -7,9 +7,21 @@ const Home = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         <ProjectCard
           title="Click Counter"
+          topics={["useState", "useEffect", "localStorage"]}
+          complete={true}
+          to="/practice/click-counter"
+        />
+        <ProjectCard
+          title="Stop Watch"
+          topics={["useState", "useEffect", "setInterval"]}
+          complete={true}
+          to="/practice/stopwatch"
+        />
+        <ProjectCard
+          title="Todo List"
           topics={["useState", "events"]}
           complete={false}
-          to="/practice/click-counter"
+          to="/practice/todo-list"
         />
       </div>
 
